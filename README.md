@@ -1,6 +1,6 @@
 # wc-qrcode
 
-A efficient and lightweight OR Code WebComponent integrated with Rust wasm library.
+A efficient and lightweight QR Code WebComponent integrated with Rust wasm library.
 
 
 
@@ -33,9 +33,6 @@ A efficient and lightweight OR Code WebComponent integrated with Rust wasm libra
 [Live Demo](https://yishiashia.github.io/wc-qrcode)
 
 ## Attributes
-
-- [text](#text)
-- [size](#size)
 
 ### text
 
