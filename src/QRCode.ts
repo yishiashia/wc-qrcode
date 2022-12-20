@@ -86,15 +86,15 @@ export default class QRCode extends HTMLElement {
       let img = this.shadowRoot.querySelector('img')
       if (img === null) {
         img = document.createElement('img')
-        img.style.cssText = `
-          width: ${this.props.size * 16}px;
-          height: ${this.props.size * 16}px;
-        `
         this.shadowRoot.querySelector('.qrcode-container')?.appendChild(img)
       }
       if (img !== null && this.qrimg !== null) {
         img.src = `data:image/svg+xml;base64,${this.qrimg}`
         img.alt = this.props.alt
+        img.style.cssText = `
+          width: ${this.props.size * 16}px;
+          height: ${this.props.size * 16}px;
+        `
       }
     }
   }
