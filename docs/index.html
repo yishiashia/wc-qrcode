@@ -14,12 +14,14 @@
       let sizeInput = document.getElementById("qr-size");
       let dataInput = document.getElementById("qr-text");
       let qrElement = document.getElementById("qr-element");
+      let changFunc = function(e) {
+        qrElement.setAttribute("text", e.target.value);
+      };
       sizeInput.addEventListener("change", function(e) {
         qrElement.setAttribute("size", e.target.value);
       });
-      dataInput.addEventListener("change", function(e) {
-        qrElement.setAttribute("text", e.target.value);
-      });
+      dataInput.addEventListener("change", changFunc);
+      dataInput.addEventListener("input", changFunc);
     }
   </script>
 </head>
@@ -33,7 +35,7 @@
       <label for="qr-text">Data:</label><br>
       <textarea id="qr-text" style="width: 100%; min-height: 100px;">https://github.com/yishiashia/wc-qrcode</textarea><br>
       <label for="qr-size">Image size:</label><br>
-      <input id="qr-size" type="number" min="2" value="2" />
+      <input id="qr-size" type="number" min="2" value="6" />
     </div>
     <br>
     <div class="form-control">
