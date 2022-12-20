@@ -1,0 +1,44 @@
+{
+  "name": "wc-qrcode",
+  "version": "0.1.0",
+  "description": "A efficient and lightweight OR Code WebComponent integrated with Rust wasm library.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js",
+    "clean": "npx rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yishiashia/wc-qrcode.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "yishiashis <yishiashia@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yishiashia/wc-qrcode/issues"
+  },
+  "homepage": "https://github.com/yishiashia/wc-qrcode#readme",
+  "dependencies": {
+    "@yishiashia/wasm-qrcode": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@testing-library/dom": "^8.19.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "babel-jest": "^29.3.1",
+    "html-webpack-plugin": "^5.5.0",
+    "babel-loader": "^9.1.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
