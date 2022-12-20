@@ -11,8 +11,8 @@ A efficient and lightweight OR Code WebComponent integrated with Rust wasm libra
   <head>
 
     <!-- Load QR WebComponent library -->
-    <script src="https://cdn.jsdelivr.net/gh/yishiashia/wc-qrcode/dist/wc-qrcode.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/yishiashia/wc-qrcode/dist/wc-qrcode.runtime.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/yishiashia/wc-qrcode@0.1.1/dist/wc-qrcode.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/yishiashia/wc-qrcode@0.1.1/dist/wc-qrcode.runtime.js"></script>
     <!-- End Load -->
 
   </head>
