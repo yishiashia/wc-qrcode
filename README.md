@@ -21,7 +21,7 @@ A efficient and lightweight QR Code WebComponent integrated with Rust wasm libra
 
     <!-- Using "qr-code" html tag to generate QR Code -->
     <qr-code
-      text="https://https://github.com/yishiashia/wc-qrcode"
+      text="https://github.com/yishiashia/wc-qrcode"
       size="6"
     ></qr-code>
 
