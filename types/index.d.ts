@@ -1,4 +1,4 @@
-declare module 'wc-dropdown' {
+declare module 'wc-qrcode' {
   export default class QRCode extends HTMLElement {
     private props: {
       alt: string

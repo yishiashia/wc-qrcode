@@ -1,8 +1,8 @@
 {
   "name": "wc-qrcode",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A efficient and lightweight QR Code WebComponent integrated with Rust wasm library.",
-  "main": "index.js",
+  "main": "./dist/wc-qrcode.js",
   "types": "./types/index.d.ts",
   "scripts": {
     "build": "npm run clean && webpack --config webpack.prod.js",

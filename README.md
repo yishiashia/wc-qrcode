@@ -35,7 +35,7 @@ There is `jsDelivr` CDN available for quickly integrated with your web page.
   <head>
 
     <!-- Load QR WebComponent library -->
-    <script src="https://cdn.jsdelivr.net/gh/yishiashia/wc-qrcode@0.1.2/dist/wc-qrcode.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/yishiashia/wc-qrcode@0.1.3/dist/wc-qrcode.js"></script>
     <!-- End Load -->
 
   </head>
