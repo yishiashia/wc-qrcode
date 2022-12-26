@@ -1,6 +1,6 @@
 {
   "name": "wc-qrcode",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A efficient and lightweight QR Code WebComponent integrated with Rust wasm library.",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/yishiashia/wc-qrcode#readme",
   "dependencies": {
-    "@yishiashia/wasm-qrcode": "^0.1.1"
+    "@yishiashia/wasm-qrcode": "^0.1.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
