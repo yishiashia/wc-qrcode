@@ -1,6 +1,6 @@
 # wc-qrcode
 
-A efficient and lightweight QR Code WebComponent integrated with Rust wasm library.
+An efficient and lightweight QR Code WebComponent integrated with Rust wasm library.
 
 ## Installation
 You can install `wc-qrcode` with npm, or just get started quickly with CDN.
