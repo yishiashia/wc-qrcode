@@ -29,7 +29,7 @@ window.onload = function() {
 There is `jsDelivr` CDN available for quickly integrated with your web page.
 
 ```
-https://cdn.jsdelivr.net/npm/wc-qrcode@0.1.4
+https://cdn.jsdelivr.net/npm/wc-qrcode@0.1.5
 ```
 
 or
