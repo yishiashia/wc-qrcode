@@ -28,6 +28,16 @@ window.onload = function() {
 ### Install from CDN
 There is `jsDelivr` CDN available for quickly integrated with your web page.
 
+```
+https://cdn.jsdelivr.net/npm/wc-qrcode@0.1.4
+```
+
+or
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/wc-qrcode@0.1.4"></script>
+```
+
 #### Basic Usages:
 
 ```html
@@ -35,7 +45,7 @@ There is `jsDelivr` CDN available for quickly integrated with your web page.
   <head>
 
     <!-- Load QR WebComponent library -->
-    <script src="https://cdn.jsdelivr.net/gh/yishiashia/wc-qrcode@0.1.4/dist/wc-qrcode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wc-qrcode@0.1.4"></script>
     <!-- End Load -->
 
   </head>
