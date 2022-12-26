@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "A efficient and lightweight QR Code WebComponent integrated with Rust wasm library.",
   "main": "index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "build": "npm run clean && webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
@@ -25,6 +26,10 @@
     "url": "https://github.com/yishiashia/wc-qrcode/issues"
   },
   "homepage": "https://github.com/yishiashia/wc-qrcode#readme",
+  "files": [
+    "dist/*",
+    "types/*"
+  ],
   "dependencies": {
     "@yishiashia/wasm-qrcode": "^0.1.2"
   },
