@@ -82,8 +82,32 @@ or
 
 ### size
 
-`Number` type. The QR code image size (mutiply with 16px).
+`Number` type. The QR code image size (multiply by 16px).
 
+### alt
+`String` type. The alt description text of the generated qrcode image.
+
+## Element Properties
+
+| Property | Type   | Description |
+| -------- | ------ | ----------- |
+| text     | String | The data string to generate QR code. |
+| size     | Integer | The QR Code image size (width and height would be the size multiply by 16px). |
+| alt      | String | The alt description text of the generated qrcode image. |
+
+You can update the qrcode component by setting its properties.
+
+For example:
+
+```js
+const qrElement = document.getElementsByTagName("qr-code")[0];
+
+if (qrElement !== undefined) {
+  qrElement.text = "https://www.example.org";
+  qrElement.alt = "URL of example.org";
+  qrElement.size = 10;
+}
+```
 
 [wc-image]: https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square
 [wc-url]: https://www.webcomponents.org/element/wc-qrcode

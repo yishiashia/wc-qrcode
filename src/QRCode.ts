@@ -99,6 +99,44 @@ export default class QRCode extends HTMLElement {
     }
   }
 
+  get text () {
+    return this.props.text
+  }
+
+  set text (txt: string) {
+    if (typeof txt === "string") {
+      this.props.text = txt
+      if (!this.hasAttribute("alt")) {
+        this.props.alt = txt
+      }
+      this.qrimg = qrcode_base64(this.props.text, 36, 36)
+      this.refreshQRImage()
+    }
+  }
+
+  get size () {
+    return this.props.size
+  }
+
+  set size (sz: number | string) {
+    if (typeof sz === "number") {
+      this.props.size = !isNaN(sz) && sz > 0 ? sz : this.props.size
+    } else {
+      const size = parseInt(String(sz))
+      this.props.size = !isNaN(size) && size > 0 ? size : this.props.size
+    }
+    this.refreshQRImage()
+  }
+
+  get alt () {
+    return this.props.alt
+  }
+
+  set alt (at: string) {
+    this.props.alt = String(at)
+    this.refreshQRImage()
+  }
+
   template (data: {
     alt: string
     text: string

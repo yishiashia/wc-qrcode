@@ -16,6 +16,12 @@ declare module 'wc-qrcode' {
     setupStyle(): void
     setupListenEvents(): void
     refreshQRImage(): void
+    get text(): string
+    set text(txt: string)
+    get size(): number
+    set size(sz: number | string)
+    get alt(): string
+    set alt(at: string)
     template(data: {
       alt: string
       text: string
