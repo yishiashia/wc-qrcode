@@ -18,7 +18,8 @@
     "webassembly",
     "wasm",
     "rust",
-    "webpack"
+    "webpack",
+    "qrcode"
   ],
   "author": "yishiashis <yishiashia@gmail.com>",
   "license": "MIT",
