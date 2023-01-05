@@ -3,6 +3,7 @@
 [![published][wc-image]][wc-url]
 [![npm][npm-version-img]][npm-url]
 [![npm][npm-download-img]][npm-url]
+[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/wc-qrcode/badge)](https://data.jsdelivr.com/v1/package/npm/wc-qrcode/badge)
 [![GitHub issues][github-issue-img]][github-issue-url]
 ![license][license-img]
 
