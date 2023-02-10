@@ -29,4 +29,16 @@ describe('QRCode.ts', () => {
     expect(qrcode_base64).toHaveBeenCalled();
   });
 
+  test('Mock qrcode_base64 method', () => {
+    const newMock = jest.fn(() => `base64_data_str`);
+    qrcode_base64.mockImplementation(newMock);
+    const dataStr = "https://www.example.com";
+    document.body.innerHTML = `
+      <qr-code
+        text="${dataStr}"
+      ></qr-code>
+    `;
+    expect(newMock).toHaveBeenCalled();
+  })
+
 });
