@@ -74,11 +74,33 @@ export default class QRCode extends HTMLElement {
   }
 
   setupStyle () {
-
+    if (this.shadowRoot !== null) {
+      const styleElement = document.createElement('style')
+      styleElement.appendChild(document.createTextNode('::slotted(*) { display: none; }'))
+      this.shadowRoot.appendChild(styleElement)
+    }
   }
 
   setupListenEvents () {
-
+    if (this.shadowRoot !== null) {
+      const slot = this.shadowRoot.querySelector("slot")
+      if (slot !== null) {
+        const assignedNodes = slot.assignedNodes({ flatten: true })
+        const div = document.createElement('div')
+        assignedNodes.forEach((node) => {
+          div.appendChild(node.cloneNode(true))
+        })
+        this.updateText(div.innerHTML)
+        slot.addEventListener('slotchange', () => {
+          const assignedNodes = slot.assignedNodes({ flatten: true });
+          const divEl = document.createElement('div')
+          assignedNodes.forEach((node) => {
+            divEl.appendChild(node.cloneNode(true))
+          })
+          this.updateText(divEl.innerHTML)
+        });
+      }
+    }
   }
 
   refreshQRImage () {
@@ -99,11 +121,7 @@ export default class QRCode extends HTMLElement {
     }
   }
 
-  get text () {
-    return this.props.text
-  }
-
-  set text (txt: string) {
+  private updateText(txt: string) {
     if (typeof txt === "string") {
       this.props.text = txt
       if (!this.hasAttribute("alt")) {
@@ -112,6 +130,14 @@ export default class QRCode extends HTMLElement {
       this.qrimg = qrcode_base64(this.props.text, 36, 36)
       this.refreshQRImage()
     }
+  }
+
+  get text () {
+    return this.props.text
+  }
+
+  set text (txt: string) {
+    this.updateText(txt)
   }
 
   get size () {
@@ -144,6 +170,7 @@ export default class QRCode extends HTMLElement {
   }) {
     return `
       <div class="qrcode-container">
+        <slot style="display: none;"></slot>
         ${
           this.qrimg === null ? "" : `
             <img
