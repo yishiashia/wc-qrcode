@@ -1,6 +1,7 @@
 # wc-qrcode
 
 [![published][wc-image]][wc-url]
+[![coverage][coverage-image]][coverage-url]
 [![npm][npm-version-img]][npm-url]
 [![npm][npm-download-img]][npm-url]
 [![jsDelivr](https://data.jsdelivr.com/v1/package/npm/wc-qrcode/badge)](https://data.jsdelivr.com/v1/package/npm/wc-qrcode/badge)
@@ -112,6 +113,10 @@ if (qrElement !== undefined) {
 
 [wc-image]: https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square
 [wc-url]: https://www.webcomponents.org/element/wc-qrcode
+
+[coverage-image]: https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fgist.githubusercontent.com%2Fyishiashia%2Fdee60aefdce58a7559baeb7c5deb3a8b%2Fraw%2F7f21007cd1da5390af78a16aedfacf12e3354af5%2Fwc-qrcode__heads_master.json
+[coverage-url]: https://gist.githubusercontent.com/yishiashia/dee60aefdce58a7559baeb7c5deb3a8b/raw/7f21007cd1da5390af78a16aedfacf12e3354af5/wc-qrcode__heads_master.json
+
 [npm-version-img]: https://img.shields.io/npm/v/wc-qrcode.svg?style=flat-square
 [npm-download-img]: https://img.shields.io/npm/dm/wc-qrcode.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/wc-qrcode
