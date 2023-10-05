@@ -76,6 +76,8 @@ or
 ## Demo page
 [Live Demo](https://yishiashia.github.io/wc-qrcode)
 
+[Slot example](https://codepen.io/yishiashia/pen/qBLJJbP)
+
 ## Attributes
 
 ### text
