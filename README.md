@@ -69,6 +69,11 @@ or
       size="6"
     ></qr-code>
 
+    <!-- Use slot content to generate QR Code -->
+    <qr-code size="6">
+      https://github.com/yishiashia/wc-qrcode
+    </qr-code>
+
   </body>
 </html>
 ```
